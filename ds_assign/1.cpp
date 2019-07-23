@@ -75,6 +75,20 @@ class arr{
         return 0;
       }
     }
+
+    void sort(){
+      int temp;
+      for(int i=1;i<lead;++i)
+      	{
+      		for(int j=0;j<(lead-i);++j)
+      			if(arr1[j]>arr1[j+1])
+      			{
+      				temp=arr1[j];
+      				arr1[j]=arr1[j+1];
+      				arr1[j+1]=temp;
+      			}
+      	}
+    }
 };
 
 int main(){
@@ -85,7 +99,7 @@ int main(){
   arr1.insert(77);
   arr1.insert(45);
   arr1.delet();
-  arr1.traverseB();
+  arr1.sort();
   arr1.traverseF();
   arr1.search(5);
   return 0;
