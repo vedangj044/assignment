@@ -3,14 +3,14 @@ using namespace std;
 
 class stack{
   public:
-    char arr[10];
+    int arr[10];
     int top;
 
     stack(){
       top = -1;
     }
 
-    void push(char x){
+    void push(int x){
       if(top<10){
         top+=1;
         arr[top] = x;
@@ -20,16 +20,15 @@ class stack{
       }
     }
 
-    char pop(){
+    void pop(){
       if(isEmpty()){
         cout<<"Stack is Empty\n";
       }
-      char a = arr[top];
       top-=1;
-      return a;
     }
 
-    char topel(){
+    int topel(){
+      cout<<arr[top];
       return arr[top];
     }
 
@@ -47,3 +46,16 @@ class stack{
       cout<<"\n";
     }
 };
+
+int main(){
+  stack s;
+  s.push(10);
+  s.push(20);
+  s.print();
+  s.pop();
+  s.print();
+  s.isEmpty();
+  s.pop();
+  s.isEmpty();
+  return 0;
+}
