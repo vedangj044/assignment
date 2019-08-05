@@ -1,4 +1,4 @@
-class c{
+class d{
   public static void main(String args[]){
     String s = "(a+b+c+e+f+g)";
     int k = 2;

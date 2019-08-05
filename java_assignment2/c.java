@@ -10,7 +10,6 @@ class c{
     int j = 0;
     System.out.println("0");
     System.out.println("1");
-
     for(int i=2; i<l; i++){
       j=a+b;
       b=a;
