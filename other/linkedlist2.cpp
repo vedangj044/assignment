@@ -1,4 +1,4 @@
-0 #include <iostream>
+#include <iostream>
 using namespace std;
 
 struct node{
